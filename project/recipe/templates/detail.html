@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="menu">
+        <a href="{% url 'home' %}"><p>home</p></a>
+    </div>
+    <div id="header">
+        <p>{{ recipe.title }}</p>
+        <p># {{ recipe.category }}</p>
+    </div>
+    <div>
+        <p>※ 넣은 재료는 헷갈리지 않게 체크!</p>
+        <input type="checkbox">{{ recipe.material_1 }}</input><br>
+        <input type="checkbox">{{ recipe.material_2 }}</input><br>
+        <input type="checkbox">{{ recipe.material_3 }}</input><br>
+        <input type="checkbox">{{ recipe.material_4 }}</input><br>
+        <input type="checkbox">{{ recipe.material_5 }}</input><br>
+        <input type="checkbox">{{ recipe.material_6 }}</input><br>
+        <input type="checkbox">{{ recipe.material_7 }}</input><br>
+        <input type="checkbox">{{ recipe.material_8 }}</input><br>
+        <input type="checkbox">{{ recipe.material_9 }}</input><br>
+        <input type="checkbox">{{ recipe.material_10 }}</input>
+    </div>
+</body>
+</html>

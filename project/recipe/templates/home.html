@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'home.css' %}" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="http://cdn.jsdelivr.net/gh/sunn-us/SUIT/fonts/static/woff2/SUIT.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body style="overflow-x: hidden; overflow-y: auto">
+    <div class="menu">
+      <a href="{% url 'home' %}">
+        <span class="material-icons-outlined"> home HOME</span>
+      </a>
+      <span class="material-icons-outlined"> lock LOGIN</span>
+    </div>
+    <div class="header">
+      <h1 id="header">마라탕 소스 백과사전</h1>
+      <input type="text" placeholder="소스 이름이 뭐였더라..." />
+    </div>
+    <div class="list_button">
+      <a href="{% url 'total_list' %}"><button>전체 목록</button></a>
+      <a href="{% url 'keyword' %}"><button>키워드 검색</button></a>
+    </div>
+    <div class="popular_list">
+      <p class="popular_list">인기 소스</p>
+      <ol>
+        1. 에스쿱스 소스
+      </ol>
+      <ol>
+        2. 정한 소스
+      </ol>
+      <ol>
+        3. 조슈아 소스
+      </ol>
+    </div>
+    <center>
+      <div class="ad">
+        <iframe
+          width="330"
+          height="186"
+          src="https://www.youtube.com/embed/VCDWg0ljbFQ?rel=0&amp;autoplay=1&mute=1&amp;loop=1;playlist=영상키값"
+          frameborder="0"
+        ></iframe>
+      </div>
+      <div class="footer">
+        <p class="footer">2022.07.31. UPDATE</p>
+        <p class="footer">made by @inner_stella__</p>
+      </div>
+    </center>
+  </body>
+</html>

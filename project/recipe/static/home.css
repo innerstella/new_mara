@@ -1,0 +1,84 @@
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0px;
+  font-family: "SUIT", sans-serif;
+}
+
+/* 상단 메뉴 */
+.menu {
+  background-color: #e74444;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+p#menu {
+  margin: 0px;
+  padding: 10%;
+}
+span.material-icons-outlined {
+  color: rgb(247, 244, 239);
+  font-size: large;
+  word-spacing: -13px;
+}
+
+/* 헤더 */
+.header {
+  background-color: #e74444;
+  margin-top: 0px;
+  padding-bottom: 3%;
+}
+h1#header {
+  margin: 0px;
+  padding-top: 5%;
+  padding-left: 10%;
+  padding-bottom: 3%;
+  color: rgb(247, 244, 239);
+}
+input {
+  position: relative;
+  left: 10%;
+}
+
+/* 리스트 버튼 */
+.list_button {
+  margin-top: 3%;
+  display: flex;
+  justify-content: space-evenly;
+}
+button {
+  background-color: antiquewhite;
+  color: black;
+  font-size: medium;
+  font-weight: 500;
+  border: none;
+  border-radius: 10%;
+  padding: 5px 15px;
+}
+
+/* 인기소스 */
+.popular_list {
+  margin-top: 7%;
+  padding-left: 10%;
+}
+p.popular_list {
+  font-weight: 600;
+  font-size: large;
+  padding: 0;
+}
+
+/* 영상 */
+.ad {
+  margin-top: 7%;
+}
+
+/* footer */
+.footer {
+  margin-top: 7%;
+  padding-bottom: 3%;
+}
+p.footer {
+  margin: 5px;
+}
